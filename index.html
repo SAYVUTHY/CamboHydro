@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambodia Hydrology</title>
+    <link rel="icon" href="img/Logo/Logo.png" type="image/icon type">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap">
+    <link rel="stylesheet" href="css/odometer-theme-car.css">
+    <meta name="description" content="Cambodia Hydrology">
+    <meta name="title" content="Cambodia Hydrology">
+    <meta name="author" content="Say Vuthy">
+    <meta name="keywords" content="Imagery, Hydrology, Landuse, Sentinel 2, Cambodia">
+
+
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Montserrat Alternates', sans-serif;
+            /* text-transform: capitalize; */
+            text-decoration: none;
+        }
+        body{
+            min-height: 100vh;
+            /* background-color: blue; */
+            /* background: url("img/Background.jpg"); */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.297),rgba(255, 255, 255, 0.215)), url('img/Background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+
+        .logo1{
+            /* background-color: aqua; */
+            /* width: 90%; */
+            /* height: 300px; */
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            column-gap: 30px;
+            justify-content: space-around;
+        }
+        @media (min-width: 900px) {
+            .logo1{
+                height: 300px;
+                margin-top: 30px;
+            }
+            .img1{
+                width: 80%;
+            }
+
+        }
+        .logo2{
+            display: flex;
+            flex-flow: column;
+            row-gap: 20px;
+            justify-content: space-evenly;
+        }
+
+        .logo2 img{
+            width: 100%;
+        }
+
+        .img1{
+            width: 50%;
+            animation: cmanimate 2.5s linear forwards;
+        }
+        @keyframes cmanimate{
+            0%{
+                opacity: 0;
+                transform: translateX(-100px)
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .img2{
+            animation: cmanimate2 2.5s linear forwards;
+        }
+        @keyframes cmanimate2{
+            0%{
+                opacity: 0;
+                transform: rotateY(90deg) translateY(-100px);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                opacity: 1;
+                transform: rotateY(0deg);
+            }
+        }
+        .img3{
+            animation: cmanimate3 2.5s linear forwards;
+        }
+        @keyframes cmanimate3{
+            0%{
+                opacity: 0;
+                transform: rotateY(90deg) translateY(100px);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                opacity: 1;
+                transform: rotateY(0deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <img id="idlogo" alt="">
+        </a>
+        
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar" >
+            <ul id="navbar1">
+            </ul>
+        </nav>
+    </header>
+    <div class="writebc">
+        <div class="contant">
+            <div class="logo1">
+                <img class="img1" src="img/Logo/Logo.gif" alt="">
+                <div class="logo2">
+                    <img class="img2" src="img/Logo/Cambo.gif" alt="">
+                    <img class="img3" src="img/Logo/Hydro.gif" alt="">
+                </div>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <!-- <img src="img/Logo/Logo1.png" style="width: 80%;" alt="" class="imglogo1"> -->
+            </div>
+            <!-- <h1>Cambodia Hydrology</h1> -->
+            <br>
+            <br>
+            <p style="font-weight: bold;">Cambodia Hydrology (Cambo-Hy) is a website that collected data from open source for Hydrology (such as Landuse, Imagery, Digital Elevation, Weather etc.,) that data are from Google Earth Engine, etc,.</p>
+
+        </div>
+        <div style="position: absolute; bottom: 0; margin-bottom: 10px; margin-left: 30px; display: flex; ">
+            <p style="margin-right: 10px;">visiter: </p>
+        
+            <div class="odometer" id="odome" >
+                <div class="digit">
+                <div class="digit-container digit-hundred">0 9 8 7 6 5 4 3 2 1 0</div>
+            </div><div class="digit">
+                <div class="digit-container digit-ten">0 9 8 7 6 5 4 3 2 1 0</div>
+            </div><div class="digit">
+                <div class="digit-container digit-one">0 9 8 7 6 5 4 3 2 1 0</div>
+            </div></div>
+        </div>
+    </div>
+    <div class="aboutmeimg">
+        <a href="./About Me.html"><img src="img/ProfileBlur.gif" alt=""></a>
+    </div>
+
+
+    <script src="js/odometer.min.js"></script>
+
+    <script>
+        const countEl = document.getElementById('count');
+        updateVisitCount();
+
+        function updateVisitCount() {
+            fetch('https://api.countapi.xyz/update/Laptop/Laptop2/?amount=1')
+            .then(res => res.json())
+            .then(res => {
+                // countEl.innerHTML = res.value;
+                document.getElementById('odome').innerHTML = res.value;
+            })
+        }
+
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

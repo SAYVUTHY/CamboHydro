@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambodia Urban Grown</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat Alternates', sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* text-transform: capitalize; */
+            text-decoration: none;
+        }
+        body{
+            min-height: 100vh;
+            background: url("../../img/Background2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .listprovince{
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+            margin-left: 30px;
+        }
+        .listprovince iframe{
+            width: 80%;
+            height: 600px;
+            margin: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img id="idlogo" alt="">
+        </a>
+        <h3 id="Topic" class="Topichide"></h3>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul id="navbar1">
+            </ul>
+        </nav>
+    </header>
+    <div class="writebc">
+        <div class="contant" id="contant1">
+            
+            <h1 id="Topic1">Cambodia Urban Growth</h1>
+            <br>
+            <img src="../../img/Cambodia1-1.png" alt="" style="float: right; margin-left: 30px; height: 350px;">
+            <p>
+                Landsat jointed a program of the USGS and NASA and has been observing the Earth continuously from 1972 through the present day. Today the landsat satellites image the entire Eartu's 
+                surface at a 30 meter resolution about once every two weeks, including multispectral and thermal data.
+            </p>
+            <br>
+            <p>
+                Cambodia is a country located in the south-east asia and spanning an area of 181 034 Km<sup>2</sup>. Urban growth can refer
+                to any type of growth of the urban enviroment. For example: Population, Land area, Intensive land use. Nowadays, Cambodia was rapit growth for sector and population. 
+                In the video below, showed the urban growth for each province in Cambodia include Tboung Khmum Province waas formed when Kampong Cham Province was split in two by a royal decree on 31 December 2013. The Imagery was selected from 1988 to 2020.
+            </p>
+            <br>
+            <div class="listprovince">
+                <ol>
+                    <li> Banteay Meanchey (Krong Serei Saophoan)
+                        <iframe src="https://www.youtube.com/embed/tkoib_oRSLo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Battambang (Krong Battambang)
+                        <iframe src="https://www.youtube.com/embed/8S5-qPdSrGk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kampong Cham (Krong Kampong Cham)
+                        <iframe src="https://www.youtube.com/embed/bK3jIatwseQ?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kampong Chhnang (Krong Kampong Chhnang)
+                        <iframe src="https://www.youtube.com/embed/LWQP8ooR0mc?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kampong Speu (Krong Chbar Mon)
+                        <iframe src="https://www.youtube.com/embed/XZZvunWxtTg?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kampong Thom (Krong Stung Saen)
+                        <iframe src="https://www.youtube.com/embed/OffWGQHu16o?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kampot (Krong Kampot)
+                        <iframe src="https://www.youtube.com/embed/obZeSohVLjw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kandal (Krong Ta Khmau)
+                        <iframe src="https://www.youtube.com/embed/__N282qrlXY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kep (Krong Kep)
+                        <iframe src="https://www.youtube.com/embed/py23g6unrsk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Koh Kong (Krong Khemarak Phoumin)
+                        <iframe src="https://www.youtube.com/embed/aW7QHnGmnOQ?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Kratié (Krong Kratié)
+                        <iframe src="https://www.youtube.com/embed/I-nQ_KsXFDc?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Mondulkiri (Krong Senmonorom)
+                        <iframe src="https://www.youtube.com/embed/uWKmj6a926o?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Oddar Meanchey (Krong Samraong)
+                        <iframe src="https://www.youtube.com/embed/Cev6PDWfExk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Pailin (Krong Pailin)
+                        <iframe src="https://www.youtube.com/embed/7AcW7tagjaU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Phnom Penh Capital City
+                        <iframe src="https://www.youtube.com/embed/6-iZ6TfZUAY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Preah Sihanouk (Krong Preah Sihanouk)
+                        <iframe src="https://www.youtube.com/embed/05tmcSb-beU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Preah Vihear (Krong Preah Vihear)
+                        <iframe src="https://www.youtube.com/embed/GGz0jPh3a30?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Pursat (Krong Pursat)
+                        <iframe src="https://www.youtube.com/embed/jwyQQQamMuc?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Prey Veng (Krong Prey Veng)
+                        <iframe src="https://www.youtube.com/embed/AzXRjo-geNs?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Ratanakiri (Krong Banlung)
+                        <iframe src="https://www.youtube.com/embed/cPYLbFLP684?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Siem Reap (Krong Siem Reap)
+                        <iframe src="https://www.youtube.com/embed/zK0tHgShUh8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Stung Treng (Krong Stung Treng)
+                        <iframe src="https://www.youtube.com/embed/R3g7tUDxCTU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Svay Rieng (Krong Svay Rieng)
+                        <iframe src="https://www.youtube.com/embed/JpQNupX2Uyw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Takéo (Krong Doun Kaev)
+                        <iframe src="https://www.youtube.com/embed/JDkZSSavin4?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> Tboung Khmom (Krong Suong)
+                        <iframe src="https://www.youtube.com/embed/eOv7fLlDUgo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li> New Krong for Tboung Khmom Province
+                        <iframe src="https://www.youtube.com/embed/ybP6JFeb3oI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="aboutmeimg">
+        <a href="../../About Me.html"><img src="../../img/ProfileBlur.png" alt=""></a>
+    </div>
+    
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

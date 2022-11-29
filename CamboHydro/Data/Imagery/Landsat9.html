@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landsat9</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://kit.fontawesome.com/242cdb8a57.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat Alternates', sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* text-transform: capitalize; */
+            text-decoration: none;
+        }
+        body{
+            min-height: 100vh;
+            background: url("../../img/Background2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .iframe{
+            background-color: green; 
+            width:100%; 
+            height: 90vh;
+            
+            top: 0;
+            z-index: 1000;
+            left: 0;
+
+        }
+        .iframe button{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            float: right;
+            right: 0;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img id="idlogo" alt="">
+        </a>
+        <h3 id="Topic" class="Topichide"></h3>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul id="navbar1">
+            </ul>
+        </nav>
+    </header>
+    <div class="writebc">
+        <div class="contant" id="contant1">
+            
+            <h1 id="Topic1">Landsat 9</h1>
+            <br>
+            <a href="https://www.usgs.gov/landsat-missions/landsat-9" target="new"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/LANDSAT-9.jpg/450px-LANDSAT-9.jpg" alt="" style="float: right; margin-left: 30px; width: 400px;box-shadow: 0 0 20px black;"></a>
+            <p>
+                Landsat 9 is an Earth observation satellite launched on 27 September 2021 from Space Launch Complex-3E at Vandenberg 
+                Space Force Base on an Atlas V 401 launch vehicle. NASA is in charge of building, launching, and testing the satellite, 
+                while the United States Geological Survey (USGS) operates the satellite, and manages and distributes the data archive.
+                 It is the ninth satellite in the Landsat program, but Landsat 6 failed to reach orbit. The Critical Design Review (CDR) was completed by NASA in April 2018, and Northrop Grumman Innovation Systems (NGIS) was given the go-ahead to manufacture the satellite.
+            </p>
+            <div class="apolo">
+                <img src="../../img/Screenshot 2022-11-22 162335.png" alt="">
+            </div>
+            <div class="iframe" id="IdFrame" style="position: relative;">
+                
+                <button id="Buttonzoom"><i class="fa-solid fa-expand"></i></button>
+                <iframe src="https://dynamicworld.app/" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="aboutmeimg">
+        <a href="../../About Me.html"><img src="../../img/ProfileBlur.gif" alt=""></a>
+    </div>
+    
+    <script src="../../../js/main.js"></script>
+
+</body>
+</html>
