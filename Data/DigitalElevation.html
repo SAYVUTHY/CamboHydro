@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Elevation</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://kit.fontawesome.com/242cdb8a57.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat Alternates', sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* text-transform: capitalize; */
+            text-decoration: none;
+        }
+        body{
+            min-height: 100vh;
+            /* background: url("../img/BC_DEM.jpg"); */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.297),rgba(255, 255, 255, 0.215)), url('../img/BC_DEM.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img id="idlogo" alt="">
+        </a>
+        <h3 id="Topic" class="Topichide">a</h3>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul id="navbar1">
+            </ul>
+        </nav>
+    </header>
+    <div class="writebc">
+        <div class="contant" id="contant1">
+            <h1 id="Topic1">Digital Elevation</h1>
+            <br>
+            <p>
+                A Digital Elevation Model (DEM) is a digital cartographic dataset that represents a continuous topographic elevation surface through a series of cells. Each cell represents the elevation (Z) of a feature at its location (X and Y). Digital Elevation Models are a “bare earth” representation because they only contain information about the elevation of geological (ground) features, such as valleys, mountains, and landslides, to name a few. They do not include any elevation data concerning non-ground features, such as vegetation or buildings.
+            </p>
+            <br>
+            <p>
+                Digital Elevation Models (DEMs) describe the shape of Earth’s terrain. The Earth Engine data catalog contains several global DEMs such as Shuttle Radar Topography Mission (SRTM) data at 30-meter resolution, regional DEMs at higher resolutions, and derived products such as the WWF's HydroSHEDS hydrology database.
+            </p>
+            <br>
+            <div class="iframe" id="IdFrame" style="position: relative;">
+                
+                <button id="Buttonzoom"><i class="fa-solid fa-expand"></i></button>
+                <!-- <iframe src="https://vuthysaystg.users.earthengine.app/view/digital-elevation" frameborder="0" style="width: 100%; height: 100%; border-radius: 30px;"></iframe> -->
+
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="aboutmeimg">
+        <a href="../About Me.html"><img src="../img/ProfileBlur.png" alt=""></a>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
